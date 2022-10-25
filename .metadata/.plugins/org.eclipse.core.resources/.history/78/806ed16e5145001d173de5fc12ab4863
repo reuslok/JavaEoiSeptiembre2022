@@ -1,0 +1,5 @@
+package es.eoi.app.Autoescuela;
+
+public class Alumno {
+
+}

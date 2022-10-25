@@ -1,0 +1,12 @@
+package es.eoi.app.Autoescuela;
+
+import java.time.LocalDate;
+
+public class Resumen {
+	private Listado[] lista;
+	private LocalDate fecha;
+	
+	public void ImprimeResumen() {
+		
+	}
+}

@@ -1,0 +1,19 @@
+package cajeroautomatico;
+
+public class InitData {
+	
+	Titular[] titulares= {
+			new Titular("pepe", "paco", "adkawjdja"),
+			new Titular("maria","mari","123qasdj"),
+			new Titular("mario", "maro", "dawdasdf")
+						};
+	
+	Cuenta[] cuentas = {
+			new Cuenta(titulares[0],1000.0*2),
+			new Cuenta(titulares[1],1000.0*3),
+			new Cuenta(titulares[2],1000.0*4)
+			
+	};
+	
+	
+}

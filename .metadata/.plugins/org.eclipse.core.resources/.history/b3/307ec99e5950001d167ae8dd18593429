@@ -1,0 +1,36 @@
+package es.eoi.app;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import es.eoi.config.BBDDUtils;
+
+public class Main {
+	public static Connection conexion;
+
+	public static void main(String[] args) {
+
+		try {
+
+			String dniAlumno = null;
+
+			conexion = BBDDUtils.openConnection();
+
+			System.out.println("Conectado:"+BBDDUtils.BBDD_URL);
+
+			
+
+			GestionInstituto.GestionInstituto();
+			conexion.close();
+			
+		} catch (SQLException e) {
+
+			System.out.println("Error al abrir conexión a BBDD.");
+
+			e.printStackTrace();
+
+		}
+	}
+}
+

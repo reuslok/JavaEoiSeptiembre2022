@@ -1,0 +1,28 @@
+package cajeroautomatico;
+
+public class CajeroAutomatico {
+	
+
+	public static boolean initializated=false;
+	public static Titular[] titulares=new Titular[3];
+	static Cuenta[] cuentas= {
+			new Cuenta("pepe", "pep", "cocoloco", 1+12341),
+			new Cuenta("paco", "pac", "conoloco", 2+1234124),
+			new Cuenta("pedro", "ped", "pedoloco", 3+313124)
+	};
+	public static void main(String[] args) 	{	
+	
+		if(!initializated) 
+			initializated=InitData();	
+		
+	}
+	
+	public static boolean InitData() { 
+		for(int i=0;i<titulares.length;i++) {
+			
+			titulares[i]=cuentas[i];
+		}
+			
+			return true;
+		}
+	}

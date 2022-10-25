@@ -1,0 +1,6 @@
+package es.eoi.app.Autoescuela;
+
+public class Listado {
+Alumno lista;
+boolean apto;
+}

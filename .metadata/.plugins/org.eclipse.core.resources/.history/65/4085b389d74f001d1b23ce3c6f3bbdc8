@@ -1,0 +1,63 @@
+package es.eoi.app;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import es.eoi.config.BBDDUtils;
+//Ejercicio 1 - PARTE I
+// Crearemos una tabla con la siguiente estructura:
+//ALUMNO (DNI, NOMBRE, APELLIDOS, EDAD)
+// A continuación nos crearemos los siguientes paquetes:
+//es.eoi.jdbc.entity
+//es.eoi.jdbc.service
+//es.eoi.jdbc.repository
+// Crearemos las siguientes clases:
+//es.eoi.jdbc.entity.Alumno.java (Tendrá los mismos atributos que la tabla, constructores, ...)
+//es.eoi.jdbc.service.AlumnoService.java
+//es.eoi.jdbc.repository.AlumnoRepository.java
+//es.eoi.jdbc.app.GestionInstituto.java
+public class MantenimientoEmpleados {
+
+	public static void main(String[] args) {
+
+		try {
+
+			String dniEmpleado = null;
+
+			Connection conexion = BBDDUtils.openConnection();
+
+			System.out.println("Conectado:"+BBDDUtils.BBDD_URL);
+
+			Statement instruccionSQL = conexion.createStatement();
+
+			String sql = " SELECT EMPLEADO.NOMBRE, DEPARTAMENTO.NOMBRE AS DEPARTAMENTO "
+
+					+ " FROM EMPLEADO "
+
+					+ " INNER JOIN DEPARTAMENTO ON EMPLEADO.CODIGO_DEPARTAMENTO = DEPARTAMENTO.CODIGO ";
+
+			if (dniEmpleado != null) {
+
+				sql = sql + " WHERE EMPLEADO.DNI = ?";
+			}
+			
+			ResultSet resultadoConsulta = instruccionSQL.executeQuery(sql);
+			while(resultadoConsulta.next()) {
+				System.out.println(
+					resultadoConsulta.getString("NOMBRE") + " ("+
+					resultadoConsulta.getString("DEPARTAMENTO")+")");
+			}
+			
+			conexion.close();
+			
+		} catch (SQLException e) {
+
+			System.out.println("Error al abrir conexión a BBDD.");
+
+			e.printStackTrace();
+
+		}
+	}
+}
+

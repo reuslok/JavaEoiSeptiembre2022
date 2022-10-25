@@ -1,0 +1,6 @@
+package cajeroautomatico;
+
+public class InitData {
+	Titular[] titulares= new Titular{"pepe", "paco", "adkawjdja"};
+	
+}

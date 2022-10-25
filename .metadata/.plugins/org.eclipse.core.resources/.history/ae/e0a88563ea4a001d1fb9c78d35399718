@@ -1,0 +1,11 @@
+package euromillones;
+
+public class Main {
+
+	public static void main(String[] args) {
+	Matriz.matriz();
+	CombinacionGanadora combinacionGanadora=new CombinacionGanadora();
+	
+	}
+
+}

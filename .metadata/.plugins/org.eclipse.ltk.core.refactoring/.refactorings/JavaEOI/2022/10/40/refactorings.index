@@ -1,0 +1,53 @@
+1664783745231	Rename type 'CalculadoraMetodos'
+1664802833943	Delete element
+1664806123332	Rename type 'JMFSupermectadoCovid'
+1664816534694	Delete element
+1664816598057	Rename type 'Productos'
+1664817416076	Delete elements
+1664828887655	Delete elements
+1664870800716	Delete element
+1664870953022	Delete element
+1664874106638	Delete element
+1664880545649	Rename type 'Examen'
+1664880622976	Copy compilation unit
+1664882508888	Move compilation unit
+1664882523093	Move compilation unit
+1664882544606	Move compilation unit
+1664883508015	Delete element
+1664883511767	Delete element
+1664889352506	Delete element
+1664896270518	Delete element
+1664902309614	Rename type 'Main'
+1664902389408	Rename type 'persona'
+1664905625659	Delete element
+1664985486172	Copy compilation unit
+1664989426087	Delete element
+1664990118695	Delete element
+1664990121538	Delete element
+1664990130505	Copy compilation unit
+1664990137701	Copy compilation unit
+1664990803270	Rename compilation unit 'raton.java'
+1664992396002	Rename local variable 'raton1'
+1664992412394	Rename local variable 'gato1'
+1664992429022	Rename local variable 'perro1'
+1664993541702	Rename type 'Figuras'
+1665047862442	Rename local variable 'lista'
+1665047884163	Rename local variable 'lista'
+1665047900518	Rename local variable 'alumno'
+1665053823475	Rename field 'Estados'
+1665064506943	Delete element
+1665065955761	Copy compilation unit
+1665065967052	Rename type 'Alumno'
+1665066264893	Delete element
+1665070357178	Delete element
+1665070359091	Delete element
+1665070361797	Delete element
+1665070362582	Delete element
+1665070363543	Delete element
+1665076635226	Rename field 'titutlo'
+1665076644206	Rename field 'titulo'
+1665076652983	Rename field 'codigo'
+1665076666527	Rename type 'Articulo'
+1665131045008	Delete element
+1665131059265	Rename resource 'Campus(1).java'
+1665132850383	Rename method 'printMenuSelectBook'

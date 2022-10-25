@@ -1,0 +1,8 @@
+package es.eoi.app.Autoescuela;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+	}
+}

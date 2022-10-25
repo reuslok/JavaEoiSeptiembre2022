@@ -1,0 +1,24 @@
+package cajeroautomatico;
+
+public class Cuenta extends Titular {
+	
+	
+	private Titular titular;
+	private double cantidad;
+	
+	public Cuenta(String nombre, String usuario, String contraseña,double cantidad) {
+		super(nombre, usuario, contraseña);
+		// TODO Auto-generated constructor stub
+	}
+
+	public Titular getTitular() {
+		return titular;
+	}
+
+	public double getCantidad() {
+		return cantidad;
+	}
+	
+}
+	
+

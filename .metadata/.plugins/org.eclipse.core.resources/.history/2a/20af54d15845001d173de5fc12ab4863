@@ -1,0 +1,19 @@
+package es.eoi.app.Autoescuela;
+
+import java.time.LocalDate;
+
+public class Resumen {
+	private Listado[] lista;
+	private LocalDate fecha;
+	
+	public void ImprimeResumen() {
+		System.out.println("APTOS:");
+		for(Listado lista:lista) {
+			Alumno alumno=lista.getLista();
+			if (lista.isApto()) {
+				System.out.println("- "+alumno.getNombre()+"(Nota: "+(alumno.getNotaTeorico()*alumno.getNotaPractico()/2)+" T:"+alumno.getNotaTeorico()+" / P:"+alumno.getNotaPractico());
+			}
+				
+		}
+	}
+}

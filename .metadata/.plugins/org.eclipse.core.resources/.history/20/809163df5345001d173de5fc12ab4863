@@ -1,0 +1,11 @@
+package es.eoi.app.Autoescuela;
+
+public class Listado {
+Alumno lista;
+boolean apto;
+public Listado(Alumno lista, boolean apto) {
+
+	this.lista = lista;
+	this.apto = apto;
+}
+}

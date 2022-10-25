@@ -1,0 +1,15 @@
+package es.eoi.app;
+
+public class GestionInstituto {
+	public static void GestionInstituto() {
+		System.out.println("GESTION INSTITUTO V1\r\n"
+				+ "-------------------------------\r\n"
+				+ "1 – Listado Alumnos\r\n"
+				+ "2 – Busca Alumno (DNI)\r\n"
+				+ "3 – Crear Alumno\r\n"
+				+ "4 – Modificar Alumno\r\n"
+				+ "5 – Eliminar Alumno\r\n"
+				+ "0 – SALIR\r\n"
+				+ "-------------------------------");
+	}
+}

@@ -1,0 +1,26 @@
+package cajeroautomatico;
+
+import java.util.Scanner;
+
+public class Login {
+	
+	public static boolean Login() {
+		String usuario;
+		String contraseña;
+		int contador=0;
+		Scanner sc= new Scanner(System.in);
+		boolean loginValido=false;
+		
+		do {
+			System.out.println("introduzca el nombre de usuario");
+			String nombreDeUsuario = sc.nextLine();
+			System.out.println("introduzca la contraseña");
+			String contraseñaUsuario = sc.nextLine();
+			
+			if(contador==2)return false;
+		}
+		while(loginValido==false);
+		
+	return true;
+	}
+}

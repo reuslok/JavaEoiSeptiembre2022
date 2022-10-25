@@ -1,0 +1,12 @@
+package es.eoi.app.Autoescuela;
+
+public class Listado {
+private Alumno lista;
+private boolean apto=false;
+public Listado(Alumno lista) {
+
+	this.lista = lista;
+	if(lista.getNotaPractico()>4.9||lista.getNotaTeorico()>4.9)
+	this.apto = true;
+}
+}

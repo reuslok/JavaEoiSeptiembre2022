@@ -1,0 +1,24 @@
+package es.eoi.jdbc.repository;
+
+import java.util.List;
+
+import es.eoi.jdbc.entity.Alumno;
+
+public class AlumnoRepository {
+	private java.sql.Connection openConnection(){
+		
+	};
+	public Alumno findByDni(String dni) {
+		return null;
+	}
+	public List<Alumno> findAll() {
+		return null;
+	}
+	public boolean create(Alumno al) {
+		return false;
+	};
+	public boolean delete(String dni) {
+		return false;
+	}
+	public boolean update(String dni, String nombre, String apellidos)
+}

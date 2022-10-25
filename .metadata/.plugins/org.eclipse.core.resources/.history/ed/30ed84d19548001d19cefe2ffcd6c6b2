@@ -1,0 +1,21 @@
+package cajeroautomatico;
+
+public class Cuenta extends Titular {
+	
+	
+	private Titular titular;
+	private double cantidad;
+	private String usuario;
+	private String contraseña;
+	
+	public Cuenta(String nombre, String usuario, String contraseña,double cantidad) {
+		super(nombre, usuario, contraseña);
+		this.usuario=usuario;
+		this.contraseña=contraseña;
+	}
+
+
+	
+}
+	
+

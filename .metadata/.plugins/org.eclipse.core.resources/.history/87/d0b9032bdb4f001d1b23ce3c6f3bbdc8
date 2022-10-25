@@ -1,0 +1,65 @@
+package es.eoi.app;
+
+import java.util.Scanner;
+
+
+public class GestionInstituto {
+	static Scanner sc= new Scanner(System.in);
+	public static void GestionInstituto() {
+		boolean terminarMenu=false;
+		do {
+		System.out.println("GESTION INSTITUTO V1\r\n"
+				+ "-------------------------------\r\n"
+				+ "1 – Listado Alumnos\r\n"
+				+ "2 – Busca Alumno (DNI)\r\n"
+				+ "3 – Crear Alumno\r\n"
+				+ "4 – Modificar Alumno\r\n"
+				+ "5 – Eliminar Alumno\r\n"
+				+ "0 – SALIR\r\n"
+				+ "-------------------------------");
+		String opcion= sc.nextLine();
+switch(opcion) {
+		
+//		Nueva Calificacion.
+		case"1":
+			System.out.println("1 – Listado Alumnos");
+
+			GestionInstituto();
+			break;
+//		Listar Calificaciones.
+		case"2":
+
+			System.out.println("2 – Busca Alumno (DNI)");
+			GestionInstituto();
+			break;
+		case"3":
+			System.out.println("3 – Crear Alumno");
+
+			GestionInstituto();
+			break;
+		case"4":
+			System.out.println("4 – Modificar Alumno");
+			
+			GestionInstituto();
+
+			break;
+		case"5":
+			System.out.println("5 – Eliminar Alumno");
+			
+			GestionInstituto();
+			
+			break;
+		case"0":
+			System.out.println("0 – SALIR");
+			terminarMenu=true;
+			break;
+		default:
+			System.out.println("opcion no reconocida");
+			GestionInstituto();
+			break;
+		}
+		}
+		while(!terminarMenu);
+		}
+	}
+}

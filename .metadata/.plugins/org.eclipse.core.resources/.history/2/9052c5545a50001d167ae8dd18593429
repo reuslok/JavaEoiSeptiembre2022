@@ -1,0 +1,98 @@
+package es.eoi.app;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Scanner;
+
+
+public class GestionInstituto {
+	static Scanner sc= new Scanner(System.in);
+	static Statement st= Main.st;
+	static ResultSet rs= Main.rs;
+	static boolean terminarMenu=true;
+	public static void GestionInstituto() throws SQLException {
+
+		do {
+		System.out.println("GESTION INSTITUTO V1\r\n"
+				+ "-------------------------------\r\n"
+				+ "1 – Listado Alumnos\r\n"
+				+ "2 – Busca Alumno (DNI)\r\n"
+				+ "3 – Crear Alumno\r\n"
+				+ "4 – Modificar Alumno\r\n"
+				+ "5 – Eliminar Alumno\r\n"
+				+ "0 – SALIR\r\n"
+				+ "-------------------------------");
+		String opcion= sc.nextLine();
+switch(opcion) {
+		
+//		Listado Alumnos.
+		case"1":
+			System.out.println("1 – Listado Alumnos");
+			
+			ListadoAlumnos();
+			break;
+//		Listar Calificaciones.
+		case"2":
+			BuscaAlumno();
+			System.out.println("2 – Busca Alumno (DNI)");
+			String dni= sc.nextLine();
+			break;
+//			Crear Alumno
+		case"3":
+			System.out.println("3 – Crear Alumno");
+			CrearAlumno();
+			break;
+//			Modificar Alumno
+		case"4":
+			System.out.println("4 – Modificar Alumno");
+			ModificarAlumno();
+
+			break;
+//			Eliminar Alumno
+		case"5":
+			System.out.println("5 – Eliminar Alumno");
+			EliminarAlumno();
+
+			
+			break;
+//			Salir
+		case"0":
+			System.out.println("0 – SALIR");
+			terminarMenu=false;
+			sc.close();
+			break;
+		default:
+			System.out.println("opcion no reconocida");
+			break;
+		}
+		}
+		while(terminarMenu);
+		}
+	private static void EliminarAlumno() {
+		// TODO Auto-generated method stub
+		
+	}
+	private static void ModificarAlumno() {
+		// TODO Auto-generated method stub
+		
+	}
+	private static void CrearAlumno() {
+		
+		
+		
+	}
+	private static void BuscaAlumno() {
+		// TODO Auto-generated method stub
+		
+	}
+	private static void ListadoAlumnos() throws SQLException {
+		while(rs.next()){
+			System.out.println(rs.getString("DNI").concat(" - ").concat(
+					rs.getString("NOMBRE")).concat(" - ").concat(
+					rs.getString("APELLIDOS")).concat(" - ")+
+					rs.getInt("EDAD"));
+			}
+		
+	}
+	}
