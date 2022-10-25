@@ -1,8 +1,0 @@
-package cajeroautomatico;
-
-public class Cuenta {
-	
-	private Titular titular;
-	private Double cantidad;
- 
-}

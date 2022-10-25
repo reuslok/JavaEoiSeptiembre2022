@@ -1,5 +1,0 @@
-package es.eoi.jdbc.repository;
-
-public class AlumnoRepository {
-
-}

@@ -1,7 +1,0 @@
-package es.eoi.app.Autoescuela;
-
-public class Alumno {
-	String nombre;
-	double notaTeorico;
-	double notaPractico;
-}
