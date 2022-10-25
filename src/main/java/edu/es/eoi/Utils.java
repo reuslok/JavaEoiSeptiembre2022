@@ -9,7 +9,7 @@ public class Utils {
 	public static Connection getConnection() throws SQLException {
 		
 		return DriverManager.getConnection("jdbc:mysql://localhost:3306/persona?serverTimezone=UTC",
-				"root", "root");
+				"root", "1234");
 	}
 
 }
