@@ -15,8 +15,8 @@ public class BancoDaoJPAImpl {
 		manager.getTransaction().commit();
 	}
 	
-	public Banco read(String id) {
-		return manager.find(Banco.class, id);
+	public Banco read(int i) {
+		return manager.find(Banco.class, i);
 	}
 	
 	public void update(Banco banco) {
@@ -25,7 +25,7 @@ public class BancoDaoJPAImpl {
 		manager.getTransaction().commit();
 	}
 	
-	public void delete(String id) {
+	public void delete(int id) {
 		manager.getTransaction().begin();
 		manager.remove(read(id));
 		manager.getTransaction().commit();

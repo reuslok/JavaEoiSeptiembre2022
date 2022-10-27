@@ -5,7 +5,7 @@ import javax.persistence.Persistence;
 
 import es.eoi.entity.Cuenta;
 
-public class CuentaDaoPJPAImpl {
+public class CuentaDaoJPAImpl {
 
 	private EntityManager manager = Persistence.createEntityManagerFactory("clientes-sucursalesPU").createEntityManager();
 
@@ -15,7 +15,7 @@ public class CuentaDaoPJPAImpl {
 		manager.getTransaction().commit();
 	}
 	
-	public Cuenta read(String id) {
+	public Cuenta read(int id) {
 		return manager.find(Cuenta.class, id);
 	}
 	
@@ -25,7 +25,7 @@ public class CuentaDaoPJPAImpl {
 		manager.getTransaction().commit();
 	}
 	
-	public void delete(String id) {
+	public void delete(int id) {
 		manager.getTransaction().begin();
 		manager.remove(read(id));
 		manager.getTransaction().commit();

@@ -2,6 +2,9 @@ package es.eoi.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
@@ -9,15 +12,21 @@ import javax.persistence.Table;
 @Entity
 @Table(schema = "clientes-sucursales", name="clientes")
 public class Cuenta {
-
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private int id;
+	
+	
 	@Column
 	private int saldo;
 	
 	@ManyToOne
 	@JoinColumn(name= "dni", referencedColumnName = "dni")
 	private Cliente cliente;
-	@JoinColumn(name= "id", referencedColumnName = "id")
+	
+	@JoinColumn(name= "idbanco", referencedColumnName = "id")
 	private Banco banco;
+	
 	public int getSaldo() {
 		return saldo;
 	}
